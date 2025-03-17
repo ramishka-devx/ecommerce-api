@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "doctorHUB/\r ├── server/\r │   ├── app.js                  # Express app configuration\r │   ├── server.js               # Entry point\r │   ├── config/                 # Environment variables and configuration\r │   │   ├── db.js               # Database connection\r │   │   └── config.js           # App configuration\r │   ├── models/                 # Database models matching your SQL schema\r │   │   ├── user.js\r │   │   ├── product.js\r │   │   └── order.js\r │   ├── controllers/            # Request handlers\r │   │   ├── userController.js\r │   │   ├── productController.js\r │   │   └── orderController.js\r │   ├── routes/                 # API routes\r │   │   ├── userRoutes.js\r │   │   ├── productRoutes.js\r │   │   └── orderRoutes.js\r │   ├── middleware/             # Custom middleware\r │   │   ├── auth.js\r │   │   └── errorHandler.js\r │   ├── utils/                  # Helper functions\r │   │   ├── validation.js\r │   │   └── helpers.js\r │   └── services/               # Business logic\r │       ├── userService.js\r │       ├── productService.js\r │       └── orderService.js\r └── client/                     # React frontend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "ramishka",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http-errors": "^2.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.13.0",
+    "nodemon": "^3.1.9"
+  }
+}
